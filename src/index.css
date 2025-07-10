@@ -1,3 +1,11 @@
+@import "tailwindcss";
+/* src/index.css */
+@import "tailwindcss/typography";
+/*@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ src/App.css */
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
