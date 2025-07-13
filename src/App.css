@@ -1,5 +1,41 @@
 @import "tailwindcss";
-@import "tailwindcss/typography";
+@plugin "daisyui";
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem;
+  /* text-align: center; */
+  background: #070127;
+  /* color: aliceblue; */
+
+
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #070127;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+/*   
+*/
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+/* 
+div {
+  background-color: rgb(9, 4, 47);
+}
 
 #root {
   max-width: 1280px;
@@ -9,7 +45,6 @@
 }
 
 .logo {
-  height: 6em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
@@ -20,6 +55,7 @@
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
+ */
 
 @keyframes logo-spin {
   from {

@@ -120,3 +120,64 @@ git commit -m "premier commit"
 branche git -M principale
 git remote ajouter l'origine https://github.com/CoderFM-JH/learn_React_Vite-React-Tailwind.git
 git push -u origine principale
+
+
+
+
+
+
+
+
+
+
+
+C:\Users\JAZON\Desktop\learn_React\projetTest_Vite+React+Tailwind>
+C:\Users\JAZON\Desktop\learn_React\projetTest_Vite+React+Tailwind>
+C:\Users\JAZON\Desktop\learn_React\projetTest_Vite+React+Tailwind>
+C:\Users\JAZON\Desktop\learn_React\projetTest_Vite+React+Tailwind>npm install tailwindcss @tailwindcss/vite
+
+added 84 packages, and audited 275 packages in 2m
+
+60 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+C:\Users\JAZON\Desktop\learn_React\projetTest_Vite+React+Tailwind>npm install -D tailwindcss postcss autoprefixer
+npm warn idealTree Removing dependencies.tailwindcss in favor of devDependencies.tailwindcss
+
+added 4 packages, and audited 279 packages in 23s
+
+62 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+C:\Users\JAZON\Desktop\learn_React\projetTest_Vite+React+Tailwind>git add .
+warning: in the working copy of 'Nouveau document texte.txt', CRLF will be replaced by LF the next time Git touches it
+
+C:\Users\JAZON\Desktop\learn_React\projetTest_Vite+React+Tailwind>git commit -m "instalation de tailwind.CSS"
+[main c401910] instalation de tailwind.CSS
+ 6 files changed, 857 insertions(+), 66 deletions(-)
+ create mode 100644 Nouveau document texte.txt
+
+C:\Users\JAZON\Desktop\learn_React\projetTest_Vite+React+Tailwind>git push -u origin main
+Enumerating objects: 16, done.
+Counting objects: 100% (16/16), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 8.44 KiB | 455.00 KiB/s, done.
+Total 9 (delta 6), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (6/6), completed with 6 local objects.
+To https://github.com/CoderFM-JH/learn_React_Vite-React-Tailwind.git
+   f6cbb74..c401910  main -> main
+branch 'main' set up to track 'origin/main'.
+
+C:\Users\JAZON\Desktop\learn_React\projetTest_Vite+React+Tailwind>
+
+
+
+
+
+
+

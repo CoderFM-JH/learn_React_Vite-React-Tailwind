@@ -1,0 +1,7 @@
+.buttonN:hover {
+   border-color: #646cff;
+ }
+ .buttonN:focus {
+   /* outline: 4px auto -webkit-focus-ring-color; */
+   background-color: #d12d00;
+ }

@@ -1,0 +1,7 @@
+.buttonI:hover {
+   background: #000;
+}
+.buttonI:focus {
+   /* outline: 4px auto -webkit-focus-ring-color; */
+   background-color: #040100;
+}
