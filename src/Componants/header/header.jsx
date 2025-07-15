@@ -18,12 +18,12 @@ export const Header = () => {
    return(
       <>
       
-         <header className="rounded-xl m-5 mx-10 flex justify-between h-13 p-3 bg-gray-800 ">
+         <header className="rounded-xl my-3 mx-10 flex justify-between h-13 p-3 bg-gray-800 ">
             <div className="flex justify-between"> {/*styles.item */}
                <img src="src\assets\react.svg" alt="image" className="flex" />
-               <h1 className="m-0 mx-1"><strong>Extension</strong> </h1>
+               <h1 className="m-0 mx-3"><strong>Extension</strong> </h1>
             </div>
-            <div className="bg-gray-700 rounded h-8">
+            <div className="bg-gray-700 rounded h-8 pt-1">
                {/* <input type="checkbox" value="synthwave" className="toggle theme-controller bg-neutral-500" /> */}
                <label className="swap swap-rotate">
                   {/* this hidden checkbox controls the state */}
@@ -31,7 +31,7 @@ export const Header = () => {
 
                   {/* sun icon */}
                   <svg
-                     className="swap-off h-7 w-10 fill-current"
+                     className="swap-off h-6 w-9 fill-current flex justify-center"
                      xmlns="http://www.w3.org/2000/svg"
                      viewBox="0 0 24 24">
                      <path
@@ -40,7 +40,7 @@ export const Header = () => {
 
                   {/* moon icon */}
                   <svg
-                     className="swap-on h-7 w-10 fill-current"
+                     className="swap-on h-5 w-8 fill-current"
                      xmlns="http://www.w3.org/2000/svg"
                      viewBox="0 0 24 24">
                      <path

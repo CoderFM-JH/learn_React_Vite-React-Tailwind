@@ -86,16 +86,15 @@ export const ItemExtension = ( {lesExtensions, editStateExtension, deleteExtensi
 
    const extensionList = lesExtensions.map(extension =>
       // <li>
-         <div key={extension.id} className="grid grid-flow-col grid-cols-5 grid-rows-3 gap-1 bg-gray-800 border-1 p-2 rounded-lg">
-               <div className="row-span-2 col-span-1 p-1 w-16 h-13 rounded">
-                  {extension.icon}
-                  <img  className="w-15 h-13 rounded"
+         <div key={extension.id} className="grid grid-flow-col grid-cols-5 grid-rows-3 gap-1 bg-gray-800 hover:bg-gray-900 border-2 p-2 rounded-xl  border-gray-600 ">
+               <div className="row-span-2 col-span-1 p-1 w-16 h-13 rounded"> 
+                  <img  className=" rounded aspect-3/2 object-cover" 
                      src="src\assets\icons\icon1.png"
                   />
                </div>
-               <div className="row-span-1 col-span-5 p-1 flex justify-between " >
-                  <button className={` btn-dash border-1 mx-0 rounded-xl h-6 px-3 bg-gray-900 ${styles.buttonI}`} 
-                     onClick={(e) =>{ 
+               <div className="row-span-1 col-span-5 p-1 flex justify-between text-sm " >
+                  <button className={` btn-dash mx-0 rounded-xl border-2 border-gray-600 h-6 px-3 bg-gray-900 hover:font-medium ${styles.buttonI}`} 
+                     onClick={(e) =>{ // border-1
                         e.stopPropagation();
                         deleteExtension(extension.id) 
                      }}
@@ -116,7 +115,7 @@ export const ItemExtension = ( {lesExtensions, editStateExtension, deleteExtensi
                <div className="row-span-1 col-span-4 px-0 text-2xl font-bold ">
                   {extension.name}
                </div>
-               <div className="row-span-1 col-span-4 px-0 flex justify-start ">
+               <div className="row-span-1 col-span-4 px-0 flex justify-start text-sm">
                   {extension.description}
                </div>
             </div>
@@ -125,8 +124,8 @@ export const ItemExtension = ( {lesExtensions, editStateExtension, deleteExtensi
 
    return(
       <>
-         <div className="grid grid-cols-3 gap-2 border-amber-5 p-1 rounded-lg">
-            
+         <div className="grid grid-cols-3  border-amber-5 gap-2 p-1 rounded-lg">
+            {/*  border-amber-5 */}
                {extensionList}
             
             {/* <div class="grid grid-flow-col grid-cols-5 grid-rows-3 gap-1 bg-gray-800 border-1 p-2 rounded-lg">

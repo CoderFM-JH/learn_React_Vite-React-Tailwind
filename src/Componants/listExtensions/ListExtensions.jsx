@@ -93,10 +93,10 @@ export const ListExtensions = () => {
    };
 
    // console.log(lesExtensions);
-   
+   //    overflow-y-scroll  bg-gray-900
    return(
       <>
-      <div className="mx-10 bg-gray-900 rounded-xl min-h-auto max-h-96 overflow-y-scroll  " >
+      <div className="ml-10 mx-10 mb-0 rounded-xl min-h-auto max-h-auto " >
          <ItemExtension 
             lesExtensions={lesExtensions}
             editStateExtension={editStateExtension} 
