@@ -85,14 +85,17 @@ export const ItemExtension = ( {lesExtensions, editStateExtension, deleteExtensi
    // ];
 
    const extensionList = lesExtensions.map(extension =>
-      // <li>
-         <div key={extension.id} className="grid grid-flow-col grid-cols-5 grid-rows-3 gap-1 bg-gray-800 hover:bg-gray-900 border-2 p-2 rounded-xl  border-gray-600 ">
-               <div className="row-span-2 col-span-1 p-1 w-16 h-13 rounded"> 
-                  <img  className=" rounded aspect-3/2 object-cover" 
-                     src="src\assets\icons\icon1.png"
-                  />
+      // <li> aspect-3/2
+         <div key={extension.id} className="grid grid-flow-col grid-cols-5 grid-rows-3 gap-1 bg-gray-800 hover:bg-gray-900 border-2 p-1 rounded-xl  border-gray-600 ">
+               
+               <div className="row-span-2 col-span-1 p-1 rounded w-13 h-14 border-0"> 
+                  {/* <img  className=" rounded object-cover" 
+                     src="src\assets\images\favicon-32x32.png"
+                  /> */}
+                     {extension.icon}
                </div>
-               <div className="row-span-1 col-span-5 p-1 flex justify-between text-sm " >
+
+               <div className="row-span-1 col-span-5 p-0 flex justify-between text-sm " >
                   <button className={` btn-dash mx-0 rounded-xl border-2 border-gray-600 h-6 px-3 bg-gray-900 hover:font-medium ${styles.buttonI}`} 
                      onClick={(e) =>{ // border-1
                         e.stopPropagation();
@@ -108,16 +111,23 @@ export const ItemExtension = ( {lesExtensions, editStateExtension, deleteExtensi
                   {/* <input type="checkbox"  className="toggle toggle-md" /> */}
                   <input
                      type="checkbox"
-                     className="toggle border-b-neutral-400 bg-gray-500 checked:border-b-gray-700 checked:bg-orange-700 checked:text-white"
+                     className="h-5 toggle border-b-neutral-400 bg-gray-500 checked:border-b-gray-700 checked:bg-orange-700 checked:text-white"
                      onClick={() => editStateExtension(extension.id, !extension.state)}
                   />
                </div>
-               <div className="row-span-1 col-span-4 px-0 text-2xl font-bold ">
+
+               {/*  font-bold text-xl  */}
+               <div className="row-span-2 col-span-4 px-0 border-0">
+                  <div className="font-bold text-sm  " >{extension.name}</div>
+                  <div className="flex justify-start text-sm" >{extension.description}</div>
+               </div>
+
+               {/* <div className="row-span-1 col-span-4 px-0 text-xl h-5 font-bold ">
                   {extension.name}
                </div>
-               <div className="row-span-1 col-span-4 px-0 flex justify-start text-sm">
+               <div className="row-span-3 col-span-4 px-0 ">
                   {extension.description}
-               </div>
+               </div> */}
             </div>
       // </li>
    );

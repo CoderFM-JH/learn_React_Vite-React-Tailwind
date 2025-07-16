@@ -17,7 +17,7 @@ export const NavBar = () => {
 
   return(
     <>
-      <div className="pt-2 mb-3 mt-5 mx-10 rounded-xl" >
+      <div className="pt-2 ml-20 mx-20 mt-3 mb-0 rounded-xl" >
         <div className="flex justify-between ">
           <div>
             <h1 className="text-2xl mx-5 font-bold" >Extensions List</h1>
