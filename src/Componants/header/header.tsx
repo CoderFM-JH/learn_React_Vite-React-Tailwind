@@ -20,8 +20,8 @@ export const Header = () => {
       
          <header className="rounded-xl my-1 ml-20 mx-20 flex justify-between h-12 bg-gray-800 ">
             <div className="flex justify-between p-2"> {/*styles.item */}
-               <img src="src\assets\react.svg" alt="image" className="flex" />
-               <h1 className="mb-3 mx-3 m-1"><strong>Extension</strong> </h1>
+               <img src="src\assets\images\logo.svg" alt="image" className="flex" />
+               <h1 className="mb-3 mx-3 m-1"><strong>.</strong> </h1>
             </div>
             <div className="p-2 " >
                <div className="bg-gray-700 rounded h-8 pt-1">

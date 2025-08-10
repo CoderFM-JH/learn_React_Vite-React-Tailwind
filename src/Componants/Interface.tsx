@@ -1,8 +1,8 @@
 
 import "tailwindcss";
-import {Header} from './header/header.jsx';
-import { NavBar } from './navBar/NavBar.jsx';
-import { ListExtensions } from './listExtensions/ListExtensions.jsx';
+import {Header} from './header/header.js';
+import { NavBar } from './navBar/NavBar.js';
+import { ListExtensions } from './listExtensions/ListExtensions.js';
 import { useState } from "react";
 
 

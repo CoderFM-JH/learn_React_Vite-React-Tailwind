@@ -92,7 +92,7 @@ export const ItemExtension = ( {lesExtensions, editStateExtension, deleteExtensi
                   {/* <img  className=" rounded object-cover" 
                      src="src\assets\images\favicon-32x32.png"
                   /> */}
-                     {extension.icon}
+                     <img src={extension.icon} alt="" />
                </div>
 
                <div className="row-span-1 col-span-5 p-0 flex justify-between text-sm " >

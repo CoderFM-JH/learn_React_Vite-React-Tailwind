@@ -1,13 +1,25 @@
 
 import { ItemExtension } from "./ItemExtension";
 import { useState } from "react";
+import devlens from "@assets/images/logo-devlens.svg";
+import StyleSpy from "@assets/images/logo-style-spy.svg";
+import SpeedBoost from "@assets/images/logo-speed-boost.svg";
+import JSONWizard from "@assets/images/logo-json-wizard.svg";
+import TabMasterPro from "@assets/images/logo-tab-master-pro.svg";
+import ViewportBuddy from "@assets/images/logo-viewport-buddy.svg";
+import MarkupNotes from "@assets/images/logo-markup-notes.svg";
+import GridGuides from "@assets/images/logo-grid-guides.svg";
+import PalettePicker from "@assets/images/logo-palette-picker.svg";
+import LinkChecker from "@assets/images/logo-link-checker.svg";
+import DOMSnapshot from "@assets/images/logo-dom-snapshot.svg";
+import ConsolePlus from "@assets/images/logo-console-plus.svg";
    
 export const ListExtensions = () => {
 
    const [lesExtensions, setLesExtensions] = useState([
       {
          id: 1,
-         icon: "src/assets/images/logo-devlens.svg", //
+         icon: devlens, 
          name: " DevLens ",
          description: " Quickly inspect page layouts and visualize element boundaries.",
          state: false,
@@ -15,7 +27,7 @@ export const ListExtensions = () => {
       },
       {
          id: 2,
-         icon: "/assets/images/logo-style-spy.svg",
+         icon: StyleSpy,
          name: "StyleSpy",
          description: " Instantly analyze and copy CSS from any webpage element.",
          state: false,
@@ -23,7 +35,7 @@ export const ListExtensions = () => {
       },
       {
          id: 3,
-         icon: "assets/images/logo-speed-boost.svg",
+         icon: SpeedBoost,
          name: "SpeedBoost",
          description: " Optimizes browser resource usage to accelerate page loading.",
          state: false,
@@ -31,7 +43,7 @@ export const ListExtensions = () => {
       },
       {
          id: 4,
-         icon: "./assets/images/logo-json-wizard.svg",
+         icon: JSONWizard,
          name: "JSONWizard",
          description: "Formats, validates, and prettifies JSON responses in-browser.",
          state: false,
@@ -39,7 +51,7 @@ export const ListExtensions = () => {
       },
       {
          id: 5,
-         icon: "./assets/images/logo-tab-master-pro.svg",
+         icon: TabMasterPro,
          name: "TabMaster Pro",
          description: "Organizes browser tabs into groups and sessions.",
          state: false,
@@ -47,7 +59,7 @@ export const ListExtensions = () => {
       },
       {
          id: 6,
-         icon: "./assets/images/logo-viewport-buddy.svg",
+         icon: ViewportBuddy,
          name: "ViewportBuddy",
          description: "Simulates various screen resolutions directly within the browser.",
          state: false,
@@ -55,7 +67,7 @@ export const ListExtensions = () => {
       },
       {
          id: 7,
-         icon: "./assets/images/logo-markup-notes.svg",
+         icon: MarkupNotes,
          name: "Markup Notes",
          description: "Enables annotation and notes directly onto webpages for collaborative debugging.",
          state: false,
@@ -63,7 +75,7 @@ export const ListExtensions = () => {
       },
       {
          id: 8,
-         icon: "./assets/images/logo-grid-guides.svg",
+         icon: GridGuides,
          name: "GridGuides",
          description: "Overlay customizable grids and alignment guides on any webpage.",
          state: false,
@@ -71,7 +83,7 @@ export const ListExtensions = () => {
       },
       {
          id: 9,
-         icon: "./assets/images/logo-palette-picker.svg",
+         icon: PalettePicker,
          name: "Palette Picker",
          description: "Instantly extracts color palettes from any webpage.",
          state: false,
@@ -79,7 +91,7 @@ export const ListExtensions = () => {
       },
       {
          id: 10,
-         icon: "./assets/images/logo-link-checker.svg",
+         icon: LinkChecker,
          name: "LinkChecker",
          description: "Scans and highlights broken links on any page.",
          state: false,
@@ -87,7 +99,7 @@ export const ListExtensions = () => {
       },
       {
          id: 11,
-         icon: "./assets/images/logo-dom-snapshot.svg",
+         icon: DOMSnapshot,
          name: "DOM Snapshot",
          description: "Capture and export DOM structures quickly.",
          state: false,
@@ -95,7 +107,7 @@ export const ListExtensions = () => {
       },
       {
          id: 12,
-         icon: "./assets/images/logo-console-plus.svg",
+         icon: ConsolePlus,
          name: "ConsolePlus",
          description: "Enhanced developer console with advanced filtering and logging.",
          state: false,
@@ -115,6 +127,7 @@ export const ListExtensions = () => {
       );
    };
 
+   // console {debug: ƒ, error: ƒ, info: ƒ, log: ƒ, warn: ƒ, …}
    // console.log(lesExtensions);
    //    overflow-y-scroll  bg-gray-900
    return(

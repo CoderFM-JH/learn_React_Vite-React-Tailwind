@@ -7,9 +7,13 @@ export default defineConfig({
   plugins: [
     react(),
     tailwindcss(),
-    // daisyui(),
+    // daisyui(),re
   ],
-
+  resolve: {
+    alias: {
+      "@assets": "/src/assets"
+    }
+  }
   // content: [
   //   "./index.html",
   //   "./src/**/*.{js,ts,jsx,tsx}",
